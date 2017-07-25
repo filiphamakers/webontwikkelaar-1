@@ -1,0 +1,132 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 65em;
+    margin:0;
+    font-family: arial, sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+
+body a:hover{
+    text-decoration: none;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+h1, h2{
+    color: rgb(150, 204, 0);
+}
+
+#wrapper{
+    margin: 1em auto;
+    width: 85%;
+}
+
+/* LOG-IN */
+#log-in{
+    font-size: 0.85em;
+    color: white;
+    background-color: rgb(150, 204, 0);
+    padding: 0 10%;
+}
+
+#log-in form{
+    float: right;
+}
+
+#aanmelden{
+    color: white;
+    border-color:chartreuse;
+    border-radius: 0.25em;
+    background-color: rgb(77, 153, 0);
+}
+
+#aanmelden:hover{
+    cursor: pointer;
+}
+
+/* HOOFDMENU */
+header img{
+    float: left;
+}
+header ul{
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 2.5em;
+}
+
+header ul li a{
+    font-family: Arial;
+    font-weight: bold;
+    color: darkgrey;
+    text-decoration: none;
+}
+/* KOP */
+#kop img{
+    float: right;
+}
+
+#kop h2{
+    color: inherit;
+    font-style: italic;
+}
+
+/* LIJF */
+#lijf img{
+    float: left;
+    margin-right: 1.5em;
+}
+
+#waarom-vdab article{
+    position: relative;
+    top: 3em;
+}
+
+#lijf ul{
+    list-style-image: url(img/check.png);
+    margin: 1.5em 0;
+}
+
+
+#lijf ul li{
+    margin-bottom: 1em;
+    float: left;
+    width: 33%;
+    padding-right: 3%;
+    height: 6.75em;
+}
+
+/* STAART */
+#staart article{
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+}
+
+#staart img{
+    float: right;
+}
+
+/* FOOTER */
+footer p:nth-child(2){
+    font-style: italic;
+}
+
+/* CLEAR FLOATS*/
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
